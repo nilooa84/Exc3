@@ -48,6 +48,9 @@ given year and is the target of predictive analysis. Please note that the values
 transformed so they don't mean real dollar values. 
 
 ```{r}
+install.packages("devtools")  # so we can install from github
+library("devtools")
+install_github("ropensci/plotly")  # plotly is part of ropensci
 library(plotly)
 set.seed(100)
 d <- diamonds[sample(nrow(diamonds), 1000), ]
