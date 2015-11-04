@@ -48,7 +48,7 @@ given year and is the target of predictive analysis. Please note that the values
 transformed so they don't mean real dollar values. 
 
 ```{r}
-Crime<-read.csv("/Users/Niloofar/Crimes2015.csv")
+Crime<-read.csv("Crimes2015.csv")
 Crime.Matrix<- as.matrix(Crime)
 library(ggplot2)
 library(ggmap)
